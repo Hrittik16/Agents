@@ -1,0 +1,5 @@
+--- Research Output --- 
+ Timestamp: 2025-04-26 16:06:04
+
+Calculus is a branch of mathematics that studies continuous change, through derivatives and integrals. It has two main branches: differential calculus, which concerns the rate of change of quantities, and integral calculus, which focuses on the accumulation of quantities. Calculus is fundamental in many fields such as physics, engineering, economics, and statistics.
+
