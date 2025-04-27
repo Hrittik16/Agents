@@ -14,4 +14,9 @@
 #### Install ADK
 - pip install google-adk
 
+### Run
+- Navigate to root folder
+- Run the following command
+    - adk web
+
 
