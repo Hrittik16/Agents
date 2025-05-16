@@ -49,7 +49,16 @@ graph_builder.add_edge("chatbot", END)
 
 # Run the graph
 graph = graph_builder.compile()
-user_input = input("Enter a message: ")
-state = graph.invoke({"messages": [{"role": "user", "content": user_input}]})
 
-print(state["messages"][-1].content)
+while True:
+    try:
+        user_input = input("User: ")
+        if user_input.lower() in ["quit", "exit", "q"]:
+            print("Goodbye!")
+            break
+        state = graph.invoke({"messages": [{"role": "user", "content": user_input}]})
+        last_message = state["messages"][-1].content
+        print(f"Assistant: {last_message}")
+    except:
+        print("Error!")
+        break
