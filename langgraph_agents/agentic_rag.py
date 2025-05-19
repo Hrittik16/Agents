@@ -59,7 +59,7 @@ agent = create_tool_calling_agent(llm, tools, prompt)
 agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
 
 # invoke the agent
-response = agent_executor.invoke({"input": "Customer support challenges in hospitality?"})
+response = agent_executor.invoke({"input": "How did cymax fix their customer service issues?"})
 
 # put the result on the screen
 print(response["output"])
